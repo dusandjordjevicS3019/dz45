@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+li , a , p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: black;
+    min-width: 300px;
+}
+img {
+    width: 150px;
+    cursor: pointer;
+    height: auto;
+}
+
+.links {
+    list-style: none;
+}
+.links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.links li a {
+    transition: all 0.2s ease 0s;
+
+}
+.links li a:hover {
+    color: blue;
+}
+.p:hover {
+    color: blue;
+}
+form {
+    text-align: center;
+    padding: 10px;
+}
+.forma {
+    margin-top: 10px;
+    
+}
+.proizvodi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    
+}
+.proizvod1 {
+    color: white;
+    border: 2px solid white;
+    margin: 5px;
+}
+.proizvod2 {
+    color: white;
+    border: 2px solid white;
+    margin: 5px;
+}
+
+.proizvod3 {
+    color: white;
+    border: 2px solid white;
+    margin: 5px;
+}
+button {
+    text-decoration: none;
+    outline: none;
+    color: black;
+    
+}
+.ostalo {
+    background-color: white;
+    color: black;
+    padding: 50px;
+    margin: 5px;
+}
+.vesti {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkred;
+    color: black;
+    text-align: center;
+  }
+
+  /* Pocetak o nama css-a */
+.onama_div  {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.onama_div p{
+    color: black;
+}
+/* Lightbox */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+  .column {
+    float: left;
+    margin: 15px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .guglmapa {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .kontaktforma {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+  }
+  .form2 {
+      border: 1px solid black;
+  }
+ .lbl {
+    display: inline-block;
+    width: 50px;
+    margin: 10px;
+ }
+ header a.ikonica {
+   display:none;
+ } 
+/* Responsive */
+
+@media screen and (max-width: 784px) {
+  header nav {
+    display: none;
+  }
+  header p {
+    display: none;
+  }
+  header a.ikonica {
+    float: right;
+    display: block;
+  }
+}
